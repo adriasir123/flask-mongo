@@ -5,16 +5,31 @@ En este repositorio se encuentra el código de mi aplicación Flask para MongoDB
 ## Requerimientos
 
 ```shell
-
+sudo apt update
+sudo apt install python3-venv git
 ```
 
-Guía de uso (FALTA EXPLICAR)...
+## Crear venv
 
-Todo esto se hará sobre `servidormongodb`
+```shell
+mkdir venv
+cd venv
+python3 -m venv .
+source bin/activate
+```
+
+### Descargar la app del repo
+
+```shell
+git clone git@github.com:adriasir123/flask-mongo.git
+pip install -r requirements.txt
+```
+
+
+
 
 ```shell
 sudo apt install python3-pip
-sudo pip install -r requirements.txt
 flask run --host=0.0.0.0
 ```
 
@@ -26,24 +41,7 @@ FALTAN PRUEBAS DE FUNCIONAMIENTO
 
 ## Despliegue con Nginx
 
-### Crear venv
 
-```shell
-mkdir venv
-cd venv
-sudo apt update
-sudo apt install python3-venv
-python3 -m venv .
-source bin/activate
-```
-
-### Descargar la app del repo
-
-```shell
-sudo apt install git
-git clone git@github.com:adriasir123/flask-mongo.git
-pip install -r requirements.txt
-```
 
 ### Fichero wsgi
 
