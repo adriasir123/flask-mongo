@@ -165,7 +165,7 @@ Habiendo ya probado que la aplicación funciona desde `clientemongodb` accediend
 
 No dejará avanzar en la creación de usuario si el email es repetido:
 
-![emailrepetido](https://i.postimg.cc/fbNFRbjP/email-repetido.gif)
+![emailrepetido](https://i.postimg.cc/5tL9QjzW/email-repetidooooo.gif)
 
 ### Evita logins con contraeña incorrecta
 
