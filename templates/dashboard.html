@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="card-wrapper">
+
+    <div class="card">
+
+      <h1 class="center">Dashboard</h1>
+      <p class="center">You are currently logged in.</p>
+
+      <div class="center">
+        <a href="/user/signout" class="btn btn--secondary">Sign Out</a>
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h1 class="center">Connection Info</h1>
+
+      <p>
+        <strong>ID:</strong> {{ session['user']['_id'] }}<br>
+        <strong>Name:</strong> {{ session['user']['name'] }}<br>
+        <strong>Email:</strong> {{ session['user']['email'] }}
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h1 class="center">Collections</h1>
+      <ul>
+        {% for coleccion in colecciones %}
+        <li>{{ coleccion }}</li>
+        {% endfor %}
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h1 class="center">Bibliotecas</h1>
+
+      {% for biblioteca in bibliotecas %}
+      <div>
+        <p><strong>ID:</strong> {{ biblioteca['_id'] }}</p>
+        <p><strong>Ciudad:</strong> {{ biblioteca['ciudad'] }}</p>
+        <p><strong>Calle:</strong> {{ biblioteca['calle'] }}</p>
+        <br>
+      </div>
+      {% endfor %}
+    
+    </div>
+
+    <div class="card">
+
+      <h1 class="center">Libros</h1>
+
+      {% for libro in libros %}
+      <div>
+        <p><strong>ID:</strong> {{ libro['_id'] }}</p>
+        <p><strong>Nº páginas:</strong> {{ libro['n_paginas'] }}</p>
+        <p><strong>Autor/a:</strong> {{ libro['autor'] }}</p>
+        <br>
+      </div>
+      {% endfor %}
+
+    </div>
+
+    <div class="card">
+
+      <h1 class="center">Trabajadores</h1>
+
+      {% for trabajador in trabajadores %}
+      <div>
+        <p><strong>ID:</strong> {{ trabajador['_id'] }}</p>
+        <p><strong>Nombre:</strong> {{ trabajador['nombre'] }}</p>
+        <p><strong>Apellido:</strong> {{ trabajador['apellido'] }}</p>
+        <br>
+      </div>
+      {% endfor %}
+
+    </div>
+
+    <div class="card">
+
+      <h1 class="center">Users</h1>
+
+      {% for usuario in usuarios %}
+      <div>
+        <p><strong>ID:</strong> {{ usuario['_id'] }}</p>
+        <p><strong>Name:</strong> {{ usuario['name'] }}</p>
+        <p><strong>Email:</strong> {{ usuario['email'] }}</p>
+        <br>
+      </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+{% endblock %}
