@@ -2,6 +2,15 @@
 
 En este repositorio se encuentra el código de mi aplicación Flask para MongoDB, y en este `README.md` se encuentra toda la documentación necesaria.
 
+## Tabla de contenido
+1. [Requerimientos](#requerimientos)
+2. [Crear venv](#crear-venv)
+3. [Descargar la app del repo](#descargar-la-app-del-repo)
+4. [Probar con el servidor de desarrollo](#probar-con-el-servidor-de-desarrollo)
+5. [Despliegue con Nginx](#despliegue-con-nginx)
+6. [Pruebas de funcionalidades](#pruebas-de-funcionalidades)
+7. [Bibliografía](#bibliografía)
+
 ## Requerimientos
 
 ```shell
