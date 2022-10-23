@@ -167,7 +167,7 @@ No dejará avanzar en la creación de usuario si el email es repetido:
 
 ![emailrepetido](https://i.postimg.cc/5tL9QjzW/email-repetidooooo.gif)
 
-### Evita logins con contraeña incorrecta
+### Evita logins con contraseña incorrecta
 
 ![badpassword](https://i.postimg.cc/rFSynDmn/bad-password.gif)
 
