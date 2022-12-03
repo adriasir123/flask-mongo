@@ -8,12 +8,9 @@ app.secret_key = b'P\xc4\xda~\x02\xb8\xdf\x11\x06RK1:\x96xg'
 # Connection
 client = MongoClient('localhost', 27017, username='admin', password='1234')
 # Database
-db = client.bibliofilos
+db = client.gn
 # Collections
-bibliotecas = db.bibliotecas
-libros = db.libros
-trabajadores = db.trabajadores
-usuarios = db.users
+profesores = db.profesores
 
 # Decorators
 def login_required(f):
@@ -37,8 +34,5 @@ def home():
 @login_required
 def dashboard():
     all_colecciones = db.list_collection_names()
-    all_bibliotecas = bibliotecas.find()
-    all_libros = libros.find()
-    all_trabajadores = trabajadores.find()
-    all_usuarios = usuarios.find()
-    return render_template('dashboard.html', colecciones=all_colecciones,bibliotecas=all_bibliotecas,libros=all_libros,trabajadores=all_trabajadores,usuarios=all_usuarios)
+    all_profesores = profesores.find()
+    return render_template('dashboard.html', colecciones=all_colecciones,profesores=all_profesores)

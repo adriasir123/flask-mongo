@@ -40,61 +40,18 @@
 
     <div class="card">
 
-      <h1 class="center">Bibliotecas</h1>
+      <h1 class="center">Profesores</h1>
 
-      {% for biblioteca in bibliotecas %}
+      {% for profesor in profesores %}
       <div>
-        <p><strong>ID:</strong> {{ biblioteca['_id'] }}</p>
-        <p><strong>Ciudad:</strong> {{ biblioteca['ciudad'] }}</p>
-        <p><strong>Calle:</strong> {{ biblioteca['calle'] }}</p>
+        <p><strong>ID:</strong> {{ profesor['_id'] }}</p>
+        <p><strong>DNI:</strong> {{ profesor['DNI'] }}</p>
+        <p><strong>NOMBRE:</strong> {{ profesor['NOMBRE'] }}</p>
         <br>
       </div>
       {% endfor %}
     
     </div>
-
-    <div class="card">
-
-      <h1 class="center">Libros</h1>
-
-      {% for libro in libros %}
-      <div>
-        <p><strong>ID:</strong> {{ libro['_id'] }}</p>
-        <p><strong>Nº páginas:</strong> {{ libro['n_paginas'] }}</p>
-        <p><strong>Autor/a:</strong> {{ libro['autor'] }}</p>
-        <br>
-      </div>
-      {% endfor %}
-
-    </div>
-
-    <div class="card">
-
-      <h1 class="center">Trabajadores</h1>
-
-      {% for trabajador in trabajadores %}
-      <div>
-        <p><strong>ID:</strong> {{ trabajador['_id'] }}</p>
-        <p><strong>Nombre:</strong> {{ trabajador['nombre'] }}</p>
-        <p><strong>Apellido:</strong> {{ trabajador['apellido'] }}</p>
-        <br>
-      </div>
-      {% endfor %}
-
-    </div>
-
-    <div class="card">
-
-      <h1 class="center">Users</h1>
-
-      {% for usuario in usuarios %}
-      <div>
-        <p><strong>ID:</strong> {{ usuario['_id'] }}</p>
-        <p><strong>Name:</strong> {{ usuario['name'] }}</p>
-        <p><strong>Email:</strong> {{ usuario['email'] }}</p>
-        <br>
-      </div>
-      {% endfor %}
 
     </div>
 
